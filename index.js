@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 
-const botToken = tokens.botToken;
-const chatID = tokens.chatID;
+const botToken = process.env.botToken;
+const chatID = process.env.chatID;
 
 async function checkAvailability() {
   const url =
@@ -83,7 +83,7 @@ async function scheduled() {
       console.log(error);
     }
     return;
-    
+
   } else {
     let message = `${storePickupProductTitle} - ${storePickupQuote}`;
     console.log(message);
