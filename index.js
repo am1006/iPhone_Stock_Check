@@ -74,14 +74,14 @@ async function scheduled() {
     let message = `Not available: ${storePickupProductTitle} - ${storePickupQuote}`;
     console.log(message);
 
-    try {
-      console.log("Starting TeleMsg...");
-      teleMsg(encodeURI(message));
-      console.log("Not available message sent");
-    } catch (error) {
-      console.log("Here is the error with TeleMsg:");
-      console.log(error);
-    }
+    // try {
+    //   console.log("Starting TeleMsg...");
+    //   teleMsg(encodeURI(message));
+    //   console.log("Not available message sent");
+    // } catch (error) {
+    //   console.log("Here is the error with TeleMsg:");
+    //   console.log(error);
+    // }
     return;
 
   } else {
